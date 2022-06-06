@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://fonts.cdnfonts.com/css/alien-encounters-solid" rel="stylesheet">
+  <link href="submit.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.">
+</head>
+<title>Murfreesboro Misfits - Submit</title>
+<body>
+  <nav>
+  <div class="logo"><img src="C:\Users\meken\Desktop\trans-logo.png" alt="Logo" style="width:90px;"></div>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="zines.html">Digital 'Zines</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="art.html">Art</a></li>
+        <li><a href="lit.html">Poetry and Literature</a></li>
+        <li><a href="outreach.html">Community Outreach</a></li>
+        <li><a href="staff.html">Meet the Staff</a></li>
+        <li><a class="active" href="submit.html">Submission Form</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+  </nav>
+
+<center> <h1> Google Form Embedding </h1> </center>
+
+<button onclick="location.href='https://docs.google.com/forms/d/1eRjhQbifBltkYVWd6KSDHS-PqRSbYHchpKXFFPjCuQk/edit?usp=sharing'">Google Form Submission</button>
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "https://docs.google.com/forms/d/1eRjhQbifBltkYVWd6KSDHS-PqRSbYHchpKXFFPjCuQk/edit?usp=sharing";
+    };
+</script>
+
+<h1> Contact Form: </h1>
+
+<div class=""><form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+<table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+<tr> <td>
+<label for="Name">Name*:</label>
+</td> <td>
+<input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="PhoneNumber">Phone number:</label>
+</td> <td>
+<input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="FromEmailAddress">Email address*:</label>
+</td> <td>
+<input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="Comments">Comments*:</label>
+</td> <td>
+<textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+</td> </tr> <tr> <td>
+* - required fields
+</td> <td>
+<input name="skip_Submit" type="submit" value="Submit" />
+<script src="https://www.100forms.com/js/FORMKEY:GYEZFUFKDM9H/SEND:my@email.com" type="text/javascript"></script>
+</td> </tr>
+</table>
+</form></center>
+
+</body>
+
+<footer>
+  <center><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <a href="https://www.facebook.com/misfitboro/?ref=page_internal" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/misfitborozine?fbclid=IwAR3RQtz6BOeam-1jCg1RIY9AmYU5ggAFA9gnbGofNP1d2Nt4QNnFl6cxoY0" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/misfitboro/?fbclid=IwAR24w0eOC51cIop-7u0s0_r81XwlczUmNMt0l611uHYrDsPMLvqyC-7SoaY" class="fa fa-instagram"></a></center>
+</footer>
+
+</html>

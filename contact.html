@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="http://fonts.cdnfonts.com/css/alien-encounters-solid" rel="stylesheet">
+  <link href="contact.css" rel="stylesheet" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.">
+</head>
+<title>Murfreesboro Misfits - Contact</title>
+<body>
+  <nav>
+  <div class="logo"><img src="C:\Users\meken\Desktop\trans-logo.png" alt="Logo" style="width:90px;"></div>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="zines.html">Digital 'Zines</a></li>
+        <li><a href="music.html">Music</a></li>
+        <li><a href="art.html">Art</a></li>
+        <li><a href="lit.html">Poetry and Literature</a></li>
+        <li><a href="outreach.html">Community Outreach</a></li>
+        <li><a href="staff.html">Meet the Staff</a></li>
+        <li><a href="submit.html">Submission Form</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
+      </ul>
+  </nav>
+
+<h1> Contact Form: </h1>
+
+<div class=""><form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+<table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+<tr> <td>
+<label for="Name">Name*:</label>
+</td> <td>
+<input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="PhoneNumber">Phone number:</label>
+</td> <td>
+<input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="FromEmailAddress">Email address*:</label>
+</td> <td>
+<input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="Comments">Comments*:</label>
+</td> <td>
+<textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+</td> </tr> <tr> <td>
+* - required fields
+</td> <td>
+<input name="skip_Submit" type="submit" value="Submit" />
+<script src="https://www.100forms.com/js/FORMKEY:GYEZFUFKDM9H/SEND:my@email.com" type="text/javascript"></script>
+</td> </tr>
+</table>
+</form></center>
+
+</body>
+</html>
